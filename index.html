@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>プライバシーポリシー | Focus &amp; Dungeon</title>
+<style>
+  :root {
+    --bg: #F6F5F1;
+    --fg: #201F1D;
+    --muted: #6B6A66;
+    --accent: #4B5563;
+    --border: #E4E2DC;
+    --highlight-bg: #FFF6DD;
+    --highlight-border: #E8C766;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15151A;
+      --fg: #ECEBE7;
+      --muted: #9C9A94;
+      --accent: #9CA8B8;
+      --border: #2A2A30;
+      --highlight-bg: #2A2410;
+      --highlight-border: #7A6321;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15151A;
+    --fg: #ECEBE7;
+    --muted: #9C9A94;
+    --accent: #9CA8B8;
+    --border: #2A2A30;
+    --highlight-bg: #2A2410;
+    --highlight-border: #7A6321;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+    line-height: 1.9;
+    font-size: 15.5px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header.doc-header {
+    margin-bottom: 48px;
+  }
+  .eyebrow {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 13.5px;
+  }
+  .lede {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--fg);
+  }
+  section.article {
+    padding: 32px 0;
+    border-top: 1px solid var(--border);
+  }
+  section.article:last-of-type {
+    border-bottom: 1px solid var(--border);
+  }
+  .article-number {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 14px;
+  }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .fill-in {
+    display: inline-block;
+    padding: 1px 8px;
+    background: var(--highlight-bg);
+    border: 1px solid var(--highlight-border);
+    border-radius: 4px;
+    font-size: 0.94em;
+  }
+  .note-box {
+    margin-top: 40px;
+    padding: 18px 20px;
+    background: var(--highlight-bg);
+    border: 1px solid var(--highlight-border);
+    border-radius: 8px;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: var(--fg);
+  }
+  .note-box strong { display: block; margin-bottom: 6px; }
+  footer {
+    margin-top: 48px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="doc-header">
+    <div class="eyebrow">プライバシーポリシー</div>
+    <h1>Focus &amp; Dungeon プライバシーポリシー</h1>
+    <div class="meta">制定日：2026年9月20日</div>
+    <p class="lede">
+      本アプリ「Focus &amp; Dungeon」（以下「本アプリ」）は、利用者の皆さまに
+      安心してご利用いただけるよう、取得する情報とその取り扱いについて
+      本ポリシーで説明します。本アプリの利用をもって、本ポリシーの内容に
+      同意いただいたものとします。
+    </p>
+  </header>
+
+  <section class="article">
+    <div class="article-number">第1条</div>
+    <h2>事業者情報</h2>
+    <p>
+      本アプリの開発・提供者は以下のとおりです。
+    </p>
+    <ul>
+      <li>開発者名：Vanishing Point Studio</li>
+      <li>お問い合わせ先：subaddress.zeppelin0109@gmail.com</li>
+    </ul>
+  </section>
+
+  <section class="article">
+    <div class="article-number">第2条</div>
+    <h2>取得する情報</h2>
+    <p>本アプリは、以下の情報を取得する場合があります。</p>
+    <ul>
+      <li>
+        <strong>広告識別子（IDFA）</strong>：広告の配信・効果測定のため、
+        利用者がトラッキングの許可（App Tracking Transparencyによる同意）を
+        行った場合にのみ取得します。許可しない場合でも本アプリの
+        全ての機能を通常どおりご利用いただけます。
+      </li>
+      <li>
+        <strong>広告SDKが自動的に取得する技術情報</strong>：端末の種類、
+        OSのバージョン、おおよその地域、IPアドレスなど、広告配信のために
+        Google AdMobが技術的に取得する情報です。
+      </li>
+      <li>
+        <strong>ゲームの進行データ</strong>：レベル、装備、集中時間の
+        記録などのゲーム内データは、利用者の端末内にのみ保存され、
+        外部のサーバーに送信されることはありません。
+      </li>
+    </ul>
+    <p>
+      本アプリは、氏名・住所・電話番号など、利用者を直接特定できる
+      個人情報の入力を求めることはありません。
+    </p>
+  </section>
+
+  <section class="article">
+    <div class="article-number">第3条</div>
+    <h2>情報の利用目的</h2>
+    <p>取得した情報は、以下の目的にのみ利用します。</p>
+    <ul>
+      <li>広告の配信、および広告の効果測定・最適化のため</li>
+      <li>アプリの不具合の把握や、動作環境の改善のため</li>
+      <li>今後、利用状況を把握するための解析ツールを導入する場合、
+        その分析のため（導入時には本ポリシーを改定し、利用者に
+        通知します）</li>
+    </ul>
+  </section>
+
+  <section class="article">
+    <div class="article-number">第4条</div>
+    <h2>第三者への提供・広告配信について</h2>
+    <p>
+      本アプリは、広告配信のために Google が提供する
+      <strong>Google AdMob</strong> を利用しています。AdMobは、
+      前条に記載した技術情報や広告識別子を、Googleのプライバシーポリシーに
+      基づいて取り扱います。詳細は以下をご参照ください。
+    </p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google の広告に関する技術について</a></li>
+    </ul>
+    <p>
+      これら第三者への情報提供は、法令に基づく場合を除き、
+      広告配信という目的の範囲を超えて行われることはありません。
+    </p>
+  </section>
+
+  <section class="article">
+    <div class="article-number">第5条</div>
+    <h2>トラッキングの許可（App Tracking Transparency）について</h2>
+    <p>
+      本アプリの初回起動時などに、Appleの仕組みに基づき
+      「トラッキングの許可を求める」ダイアログが表示されることがあります。
+      許可するかどうかは利用者が自由に選択でき、後から端末の設定
+      （設定 &gt; プライバシーとセキュリティ &gt; トラッキング）で
+      いつでも変更できます。許可しない場合でも、広告は表示されますが、
+      利用者個人に合わせた広告ではなく、一般的な広告が配信されます。
+    </p>
+  </section>
+
+  <section class="article">
+    <div class="article-number">第6条</div>
+    <h2>お子様のご利用について</h2>
+    <p>
+      本アプリは、13歳未満のお子様から意図的に個人情報を収集することは
+      ありません。保護者の方は、お子様が本アプリを利用する際、
+      端末のスクリーンタイムやペアレンタルコントロール機能の利用を
+      ご検討ください。
+    </p>
+  </section>
+
+  <section class="article">
+    <div class="article-number">第7条</div>
+    <h2>データの保存期間</h2>
+    <p>
+      ゲームの進行データは、利用者が本アプリをアンインストールするか、
+      アプリ内の設定画面からデータリセットを行うまで、端末内に
+      保存され続けます。広告識別子等の第三者への提供情報の保存期間は、
+      各提供先（Google AdMob）のポリシーに準じます。
+    </p>
+  </section>
+
+  <section class="article">
+    <div class="article-number">第8条</div>
+    <h2>本ポリシーの変更</h2>
+    <p>
+      本ポリシーの内容は、法令の改正やサービス内容の変更に応じて、
+      予告なく改定されることがあります。重要な変更を行う場合は、
+      アプリ内での告知等、適切な方法で利用者に周知します。
+    </p>
+  </section>
+
+  <section class="article">
+    <div class="article-number">第9条</div>
+    <h2>お問い合わせ</h2>
+    <p>
+      本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。
+    </p>
+    <ul>
+      <li>subaddress.zeppelin0109@gmail.com</li>
+    </ul>
+  </section>
+
+  <div class="note-box">
+    <strong>このページについて</strong>
+    これは一般的な雛形をもとに作成した草案です。
+    個人情報保護法・GDPR等、対象地域の法規制への適合については、
+    可能であれば専門家（弁護士等）によるレビューを受けることを推奨します。
+    アプリ内課金を追加する際は、特定商取引法に基づく表記の要否を
+    別途確認してください。
+  </div>
+
+  <footer>
+    Focus &amp; Dungeon — Privacy Policy Draft v0.1（2026年9月20日作成）
+  </footer>
+
+</div>
+</body>
+</html>
