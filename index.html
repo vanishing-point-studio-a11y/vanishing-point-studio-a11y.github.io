@@ -106,6 +106,13 @@
     color: var(--muted);
     font-size: 13px;
   }
+  .lang-switch { margin-top: 10px; font-size: 13.5px; }
+  .toc { margin: 0 0 8px; padding: 0; list-style: none; font-size: 14px; line-height: 2; }
+  .toc a { text-decoration: none; }
+  table.data { width: 100%; border-collapse: collapse; margin: 4px 0 14px; font-size: 14px; line-height: 1.6; }
+  table.data th, table.data td { text-align: left; vertical-align: top; padding: 8px 10px; border: 1px solid var(--border); }
+  table.data th { background: transparent; font-weight: 700; }
+  .table-wrap { overflow-x: auto; }
 </style>
 </head>
 <body>
@@ -114,7 +121,8 @@
   <header class="doc-header">
     <div class="eyebrow">プライバシーポリシー・サポート</div>
     <h1>Focus &amp; Dungeon</h1>
-    <div class="meta">制定日：2026年9月20日</div>
+    <div class="meta">制定日：2026年9月20日　最終改定日：2026年10月5日</div>
+    <div class="lang-switch"><a href="https://vanishing-point-studio-a11y.github.io/en/">English</a></div>
   </header>
 
   <section class="article" style="border-top: none; padding-top: 0;">
@@ -143,142 +151,256 @@
     <div class="article-number">プライバシーポリシー</div>
     <h2>Focus &amp; Dungeon プライバシーポリシー</h2>
     <p>
-      本アプリ「Focus &amp; Dungeon」（以下「本アプリ」）は、利用者の皆さまに
-      安心してご利用いただけるよう、取得する情報とその取り扱いについて
-      本ポリシーで説明します。本アプリの利用をもって、本ポリシーの内容に
-      同意いただいたものとします。
+      本アプリ「Focus &amp; Dungeon」（以下「本アプリ」）が取得する情報、
+      その利用と第三者への提供、および利用者の選択肢について説明します。
+      本アプリの利用をもって、本ポリシーの内容に同意いただいたものとします。
     </p>
+    <p><strong>要点：</strong>ゲームの進行データは端末内にのみ保存されます。
+      本アプリはGoogle AdMobで広告を表示しており、広告SDKが広告の配信・効果測定の
+      ために端末情報や利用情報の一部を取得する場合があります。氏名・住所・電話番号や
+      アカウントの入力は求めません。</p>
+    <ul class="toc">
+      <li><a href="#s1">第1条　事業者情報</a></li>
+      <li><a href="#s2">第2条　取得する情報</a></li>
+      <li><a href="#s3">第3条　情報の利用目的</a></li>
+      <li><a href="#s4">第4条　第三者への提供・広告配信</a></li>
+      <li><a href="#s5">第5条　利用者の選択（トラッキングと広告）</a></li>
+      <li><a href="#s6">第6条　国外での保存・処理</a></li>
+      <li><a href="#s7">第7条　お子様のご利用</a></li>
+      <li><a href="#s8">第8条　データの保存期間と削除</a></li>
+      <li><a href="#s9">第9条　開示・訂正・削除などのご請求</a></li>
+      <li><a href="#s10">第10条　国・地域ごとのご案内</a></li>
+      <li><a href="#s11">第11条　本ポリシーの変更</a></li>
+      <li><a href="#s12">第12条　お問い合わせ</a></li>
+    </ul>
   </section>
 
-  <section class="article">
+  <section class="article" id="s1">
     <div class="article-number">第1条</div>
     <h2>事業者情報</h2>
-    <p>
-      本アプリの開発・提供者は以下のとおりです。
-    </p>
+    <p>本アプリの開発・提供者は以下のとおりです。</p>
     <ul>
       <li>開発者名：Vanishing Point Studio</li>
-      <li>お問い合わせ先：subaddress.zeppelin0109@gmail.com</li>
-    </ul>
-  </section>
-
-  <section class="article">
-    <div class="article-number">第2条</div>
-    <h2>取得する情報</h2>
-    <p>本アプリは、以下の情報を取得する場合があります。</p>
-    <ul>
-      <li>
-        <strong>広告識別子（IDFA）</strong>：広告の配信・効果測定のため、
-        利用者がトラッキングの許可（App Tracking Transparencyによる同意）を
-        行った場合にのみ取得します。許可しない場合でも本アプリの
-        全ての機能を通常どおりご利用いただけます。
-      </li>
-      <li>
-        <strong>広告SDKが自動的に取得する技術情報</strong>：端末の種類、
-        OSのバージョン、おおよその地域、IPアドレスなど、広告配信のために
-        Google AdMobが技術的に取得する情報です。
-      </li>
-      <li>
-        <strong>ゲームの進行データ</strong>：レベル、装備、集中時間の
-        記録などのゲーム内データは、利用者の端末内にのみ保存され、
-        外部のサーバーに送信されることはありません。
-      </li>
+      <li>個人情報に関するお問い合わせ先：subaddress.zeppelin0109@gmail.com</li>
     </ul>
     <p>
-      本アプリは、氏名・住所・電話番号など、利用者を直接特定できる
-      個人情報の入力を求めることはありません。
+      Vanishing Point Studioは、日本を拠点とする個人運営のスタジオです。
     </p>
   </section>
 
-  <section class="article">
+  <section class="article" id="s2">
+    <div class="article-number">第2条</div>
+    <h2>取得する情報</h2>
+    <p>本アプリ自体は、データを端末内に保存します。本アプリに組み込まれた
+      広告ソフトウェア（Google Mobile Ads SDK）は、次の情報を取得する場合があります。</p>
+    <div class="table-wrap">
+    <table class="data">
+      <tr><th>区分</th><th>例</th><th>目的</th></tr>
+      <tr>
+        <td>端末の識別子</td>
+        <td>広告識別子（IDFA）。トラッキングを許可した場合のみ。その他の端末単位の識別子</td>
+        <td>広告の配信・効果測定</td>
+      </tr>
+      <tr>
+        <td>通信情報・おおよその位置</td>
+        <td>IPアドレス（端末のおおよその地域の推定に使われることがあります）</td>
+        <td>広告の配信、不正の防止</td>
+      </tr>
+      <tr>
+        <td>広告に関するデータ</td>
+        <td>表示された広告、視聴や操作の有無</td>
+        <td>広告の効果測定・改善</td>
+      </tr>
+      <tr>
+        <td>診断・性能データ</td>
+        <td>クラッシュログ、起動時間、フリーズ率、電力使用量</td>
+        <td>問題の診断、広告SDKの改善、広告の表示</td>
+      </tr>
+      <tr>
+        <td>端末・アプリ情報</td>
+        <td>端末の種類、OSのバージョン、言語、アプリ名</td>
+        <td>広告の配信、動作環境への対応</td>
+      </tr>
+    </table>
+    </div>
+    <p>
+      この一覧は、Googleが公開している広告SDKの取得情報の説明に沿ったもので、
+      SDKの更新に伴い変わることがあります。
+    </p>
+    <p><strong>端末内にのみ保存されるもの：</strong>レベル、装備、集中の記録、設定などの
+      ゲームデータは端末内に保存され、私たちや外部のサーバーには送信されません。</p>
+    <p><strong>取得しないもの：</strong>アカウントの作成や、氏名・住所・電話番号・
+      メールアドレスの入力は求めません。正確な位置情報、連絡先、写真、
+      健康に関するデータも取得しません。探索の終了などをお知らせするローカル通知は、
+      端末内で生成されます。</p>
+    <p><strong>Appleから受け取る情報：</strong>端末の設定でアプリの分析情報を開発者に
+      共有する選択をしている場合、Appleからダウンロード数やクラッシュレポートなどの
+      集計情報を受け取ることがあります。これを通じて氏名などを受け取ることはありません。</p>
+  </section>
+
+  <section class="article" id="s3">
     <div class="article-number">第3条</div>
     <h2>情報の利用目的</h2>
     <p>取得した情報は、以下の目的にのみ利用します。</p>
     <ul>
-      <li>広告の配信、および広告の効果測定・最適化のため</li>
-      <li>アプリの不具合の把握や、動作環境の改善のため</li>
-      <li>今後、利用状況を把握するための解析ツールを導入する場合、
-        その分析のため（導入時には本ポリシーを改定し、利用者に
-        通知します）</li>
+      <li>広告の配信、および広告の効果測定・改善（Google AdMobを通じて）</li>
+      <li>不具合の把握と修正、さまざまな端末での動作の改善</li>
+      <li>利用者からいただいたご連絡への返信</li>
     </ul>
+    <p>
+      今後、解析ツールを導入する場合は、使用前に本ポリシーを改定し、
+      適切な方法で利用者にお知らせします。
+    </p>
   </section>
 
-  <section class="article">
+  <section class="article" id="s4">
     <div class="article-number">第4条</div>
-    <h2>第三者への提供・広告配信について</h2>
+    <h2>第三者への提供・広告配信</h2>
     <p>
-      本アプリは、広告配信のために Google が提供する
-      <strong>Google AdMob</strong> を利用しています。AdMobは、
-      前条に記載した技術情報や広告識別子を、Googleのプライバシーポリシーに
-      基づいて取り扱います。詳細は以下をご参照ください。
+      本アプリは、広告配信のためにGoogleが提供する<strong>Google AdMob</strong>を
+      利用しています。広告SDKは、第2条の情報をGoogleに送信し、Googleは自社の
+      プライバシーポリシーに基づいて取り扱います。Googleから、利用者個人の
+      広告プロフィールを私たちが受け取ることはありません。
+    </p>
+    <p>
+      本アプリを通じて情報を受け取りうる第三者の区分は、広告サービス事業者
+      （Google）です。個人情報を対価を得て販売することはありません。
+      法令に基づく場合を除き、それ以外の第三者に提供することはありません。
+    </p>
+    <p>
+      <strong>広告SDKを通じて、他の事業者が情報を取得する場合があります。</strong>
+      Googleおよび、Googleと連携する広告主や広告パートナーが、広告の目的で
+      本アプリの利用に関する情報を取得することがあります。詳細は次をご参照ください。
     </p>
     <ul>
       <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google のサービスを使用するサイトやアプリからの情報を Google がどのように使用するか</a></li>
       <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google の広告に関する技術について</a></li>
     </ul>
-    <p>
-      これら第三者への情報提供は、法令に基づく場合を除き、
-      広告配信という目的の範囲を超えて行われることはありません。
-    </p>
   </section>
 
-  <section class="article">
+  <section class="article" id="s5">
     <div class="article-number">第5条</div>
-    <h2>トラッキングの許可（App Tracking Transparency）について</h2>
-    <p>
-      本アプリの初回起動時などに、Appleの仕組みに基づき
-      「トラッキングの許可を求める」ダイアログが表示されることがあります。
-      許可するかどうかは利用者が自由に選択でき、後から端末の設定
-      （設定 &gt; プライバシーとセキュリティ &gt; トラッキング）で
-      いつでも変更できます。許可しない場合でも、広告は表示されますが、
-      利用者個人に合わせた広告ではなく、一般的な広告が配信されます。
-    </p>
-  </section>
-
-  <section class="article">
-    <div class="article-number">第6条</div>
-    <h2>お子様のご利用について</h2>
-    <p>
-      本アプリは、13歳未満のお子様から意図的に個人情報を収集することは
-      ありません。保護者の方は、お子様が本アプリを利用する際、
-      端末のスクリーンタイムやペアレンタルコントロール機能の利用を
-      ご検討ください。
-    </p>
-  </section>
-
-  <section class="article">
-    <div class="article-number">第7条</div>
-    <h2>データの保存期間</h2>
-    <p>
-      ゲームの進行データは、利用者が本アプリをアンインストールするか、
-      アプリ内の設定画面からデータリセットを行うまで、端末内に
-      保存され続けます。広告識別子等の第三者への提供情報の保存期間は、
-      各提供先（Google AdMob）のポリシーに準じます。
-    </p>
-  </section>
-
-  <section class="article">
-    <div class="article-number">第8条</div>
-    <h2>本ポリシーの変更</h2>
-    <p>
-      本ポリシーの内容は、法令の改正やサービス内容の変更に応じて、
-      予告なく改定されることがあります。重要な変更を行う場合は、
-      アプリ内での告知等、適切な方法で利用者に周知します。
-    </p>
-  </section>
-
-  <section class="article">
-    <div class="article-number">第9条</div>
-    <h2>お問い合わせ</h2>
-    <p>
-      本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。
-    </p>
+    <h2>利用者の選択（トラッキングと広告）</h2>
     <ul>
-      <li>subaddress.zeppelin0109@gmail.com</li>
+      <li>
+        <strong>トラッキングの許可。</strong>本アプリの利用中に、Appleの仕組みにより、
+        他社のアプリやWebサイトをまたいでトラッキングすることを許可するかを
+        尋ねるダイアログが表示されることがあります。許可するかどうかは利用者が
+        自由に選択でき、後から端末の設定（設定 &gt; プライバシーとセキュリティ &gt;
+        トラッキング）でいつでも変更できます。許可しない場合でも広告は表示されますが、
+        利用者個人に合わせた広告ではなく、一般的な広告が配信されます。
+      </li>
+      <li>
+        <strong>Do Not Track。</strong>本アプリはWebサイトではないため、ブラウザの
+        「Do Not Track」信号には対応していません。本アプリによるトラッキングは、
+        上記の端末の設定で管理してください。
+      </li>
+      <li>
+        <strong>広告は任意です。</strong>本アプリの全ての機能は、広告を見なくても
+        利用できます。リワード広告は、利用者が視聴を選んだときにのみ表示されます。
+      </li>
     </ul>
   </section>
 
-  
+  <section class="article" id="s6">
+    <div class="article-number">第6条</div>
+    <h2>国外での保存・処理</h2>
+    <p>
+      広告SDKが取得した情報は、Googleが処理し、米国およびGoogleが事業を行う
+      その他の国のサーバーで保存・処理される場合があります。そのため、利用者の
+      情報が、お住まいの国の外で取り扱われることがあります。情報を保護する事業者を
+      選ぶよう合理的な措置を講じていますが、Googleによる保存や移転の方法を
+      私たちが管理することはできません。本アプリの利用をもって、この点を
+      ご理解いただいたものとします。
+    </p>
+  </section>
+
+  <section class="article" id="s7">
+    <div class="article-number">第7条</div>
+    <h2>お子様のご利用</h2>
+    <p>
+      本アプリの対象年齢は13歳以上で、13歳未満のお子様を対象としていません。
+      13歳未満のお子様から、知りながら個人情報を取得することはありません。
+      13歳未満のお子様が本アプリを通じて情報を提供したと思われる場合は、
+      ご連絡ください。広告事業者とも連携して対応します。保護者の方は、
+      端末のスクリーンタイムやペアレンタルコントロール機能のご利用もご検討ください。
+    </p>
+  </section>
+
+  <section class="article" id="s8">
+    <div class="article-number">第8条</div>
+    <h2>データの保存期間と削除</h2>
+    <ul>
+      <li>
+        <strong>端末内のゲームデータ</strong>は、本アプリをアンインストールするか、
+        アプリの設定画面からデータリセットを行うまで保存されます。私たちはその
+        コピーを持たないため、削除の方法はこの2つになります。
+      </li>
+      <li>
+        <strong>Googleが保有する情報</strong>は、Googleのポリシーに従って保存されます。
+        私たちが代わりに削除することはできません。Googleアカウントの広告設定で管理でき、
+        端末のトラッキング許可を切り替えることで広告識別子をリセットできます。
+      </li>
+      <li>
+        <strong>メールでいただいたご連絡</strong>は、返信と調査に必要な期間のみ
+        保管します。削除をご希望の場合はお申し出ください。
+      </li>
+    </ul>
+  </section>
+
+  <section class="article" id="s9">
+    <div class="article-number">第9条</div>
+    <h2>開示・訂正・削除などのご請求</h2>
+    <p>
+      お住まいの地域の法令に応じて、私たちが保有する個人情報の有無の確認、開示、
+      訂正、削除、一部の利用への異議などを求める権利がある場合があります。
+      本アプリはほとんどのデータを端末内に保存するため、私たちが確認できる
+      個人情報は、いただいたメールの範囲に限られます。ご請求や、情報の確認・
+      変更方法のお問い合わせは、第12条のメールアドレスへお送りください。
+      合理的な期間内に、また適用される法令が定める期間内に回答します。
+      ご請求をしたことで不利益な扱いをすることはありません。
+    </p>
+    <p>
+      Googleが保有する情報については、第4条のリンク先に記載のGoogleの
+      ツールや窓口をご利用ください。
+    </p>
+  </section>
+
+  <section class="article" id="s10">
+    <div class="article-number">第10条</div>
+    <h2>国・地域ごとのご案内</h2>
+    <p>
+      日本以外の利用者の方は、英語版（English）の第10条に、米国・カナダ・
+      オーストラリア・ニュージーランド・シンガポールの方への追加のご案内があります。
+      日本の利用者の方については、本ポリシー全体が日本の法令（個人情報の保護に関する
+      法律など）に沿った内容です。個人情報の取扱いに関する苦情は、まず第12条の
+      連絡先にご連絡ください。
+    </p>
+  </section>
+
+  <section class="article" id="s11">
+    <div class="article-number">第11条</div>
+    <h2>本ポリシーの変更</h2>
+    <p>
+      法令の改正やサービス内容の変更に応じて、本ポリシーを改定することがあります。
+      冒頭の最終改定日が、最後に更新した日です。重要な変更を行う場合は、
+      アプリ内での告知など適切な方法で利用者にお知らせし、最終改定日を更新します。
+      変更にあたり同意が必要な場合は、同意をお願いします。
+    </p>
+  </section>
+
+  <section class="article" id="s12">
+    <div class="article-number">第12条</div>
+    <h2>お問い合わせ</h2>
+    <p>
+      本ポリシーに関するご質問、ご請求、苦情は、以下の連絡先までお願いいたします。
+    </p>
+    <ul>
+      <li>Vanishing Point Studio（個人情報の取扱いに関する責任者）</li>
+      <li><a href="mailto:subaddress.zeppelin0109@gmail.com">subaddress.zeppelin0109@gmail.com</a></li>
+    </ul>
+  </section>
 
   <footer>
     Focus &amp; Dungeon — Privacy Policy
